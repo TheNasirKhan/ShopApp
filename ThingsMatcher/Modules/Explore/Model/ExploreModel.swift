@@ -12,6 +12,8 @@ import SwiftyJSON
 enum ExploreCellType {
     case header
     case categories
+    case shops
+    case serviceShops
     case recommendedProducts
     case recommendedSeller
     case product
@@ -23,6 +25,7 @@ class ExploreModel {
     
     var cellType : ExploreCellType
     var title: String?
+    var categories = ["All","Shops","Service","Product"]
     
     init(cellType: ExploreCellType, title: String? = nil) {
         self.cellType = cellType

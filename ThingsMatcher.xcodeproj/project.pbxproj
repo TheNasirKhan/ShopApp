@@ -27,6 +27,8 @@
 		889AA350265438E600CD0A10 /* ExploreCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AA34E265438E600CD0A10 /* ExploreCategoryCell.swift */; };
 		889AA351265438E600CD0A10 /* ExploreCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889AA34F265438E600CD0A10 /* ExploreCategoryCell.xib */; };
 		889BF2DD264BF04C0082CBB8 /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BF2DC264BF04C0082CBB8 /* ExploreModel.swift */; };
+		C964398D265FACE000DDDEBF /* ExploreShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C964398B265FACE000DDDEBF /* ExploreShopCell.swift */; };
+		C964398E265FACE000DDDEBF /* ExploreShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C964398C265FACE000DDDEBF /* ExploreShopCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		889AA34F265438E600CD0A10 /* ExploreCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreCategoryCell.xib; sourceTree = "<group>"; };
 		889BF2DC264BF04C0082CBB8 /* ExploreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreModel.swift; sourceTree = "<group>"; };
 		980A926BB5327CF90FB1902E /* Pods-ThingsMatcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingsMatcher.release.xcconfig"; path = "Target Support Files/Pods-ThingsMatcher/Pods-ThingsMatcher.release.xcconfig"; sourceTree = "<group>"; };
+		C964398B265FACE000DDDEBF /* ExploreShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreShopCell.swift; sourceTree = "<group>"; };
+		C964398C265FACE000DDDEBF /* ExploreShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreShopCell.xib; sourceTree = "<group>"; };
 		ECD409672D158A87A1108D0F /* Pods-ThingsMatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingsMatcher.debug.xcconfig"; path = "Target Support Files/Pods-ThingsMatcher/Pods-ThingsMatcher.debug.xcconfig"; sourceTree = "<group>"; };
 		F867D6984E6B846369CB2C1D /* Pods_ThingsMatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThingsMatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,11 +164,11 @@
 		889AA3442654365200CD0A10 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C9643990265FB0E400DDDEBF /* ExploreCategoryCell */,
+				C964398A265FACB900DDDEBF /* ExploreStoreCell */,
 				889AA3452654367800CD0A10 /* ExploreHelpCell.swift */,
 				889AA34B2654386B00CD0A10 /* ExploreHeaderCell.swift */,
 				889AA3482654371800CD0A10 /* ExploreListingCell.swift */,
-				889AA34E265438E600CD0A10 /* ExploreCategoryCell.swift */,
-				889AA34F265438E600CD0A10 /* ExploreCategoryCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -200,6 +204,24 @@
 				980A926BB5327CF90FB1902E /* Pods-ThingsMatcher.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C964398A265FACB900DDDEBF /* ExploreStoreCell */ = {
+			isa = PBXGroup;
+			children = (
+				C964398B265FACE000DDDEBF /* ExploreShopCell.swift */,
+				C964398C265FACE000DDDEBF /* ExploreShopCell.xib */,
+			);
+			path = ExploreStoreCell;
+			sourceTree = "<group>";
+		};
+		C9643990265FB0E400DDDEBF /* ExploreCategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				889AA34E265438E600CD0A10 /* ExploreCategoryCell.swift */,
+				889AA34F265438E600CD0A10 /* ExploreCategoryCell.xib */,
+			);
+			path = ExploreCategoryCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +289,7 @@
 				88303A1F264AA3B8008E2227 /* Home.storyboard in Resources */,
 				880E14E2260F3ECD0027DAC5 /* GoogleService-Info.plist in Resources */,
 				880E1499260F183E0027DAC5 /* Assets.xcassets in Resources */,
+				C964398E265FACE000DDDEBF /* ExploreShopCell.xib in Resources */,
 				880E1497260F183A0027DAC5 /* Main.storyboard in Resources */,
 				882A5C49264BAD2B0019128D /* Color.xcassets in Resources */,
 			);
@@ -349,6 +372,7 @@
 				889AA3462654367800CD0A10 /* ExploreHelpCell.swift in Sources */,
 				889AA3492654371800CD0A10 /* ExploreListingCell.swift in Sources */,
 				889AA34C2654386B00CD0A10 /* ExploreHeaderCell.swift in Sources */,
+				C964398D265FACE000DDDEBF /* ExploreShopCell.swift in Sources */,
 				880E1490260F183A0027DAC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

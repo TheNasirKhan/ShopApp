@@ -27,7 +27,10 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         
         exploreItems = [
             ExploreModel(cellType: .header),
-            ExploreModel(cellType: .categories)
+            ExploreModel(cellType: .categories),
+            ExploreModel(cellType: .shops),
+            ExploreModel(cellType: .serviceShops),
+            
         ]
         
     }
@@ -44,6 +47,10 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             return UITableView.automaticDimension
         case .categories:
             return 30
+        case .shops:
+            return 250
+        case .serviceShops:
+            return 250
         default:
             return 400
         }
@@ -68,6 +75,22 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
                 cell.collection.dataSource = self
                 cell.collection.tag = indexPath.row + 100
                 cell.collection.reloadData()
+            }
+            return cell
+        case .shops, .serviceShops:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ExploreListingCell", for: indexPath) as! ExploreListingCell
+            DispatchQueue.main.async {
+                cell.selectionStyle = .none
+                switch item.cellType {
+                case .shops: cell.title.text = "Near by Shops"
+                default: cell.title.text = "Near by Services"
+                }
+                cell.btnViewAll.isHidden = true
+                cell.collection.delegate = self
+                cell.collection.dataSource = self
+                cell.collection.tag = indexPath.row + 100
+                cell.collection.reloadData()
+                cell.viewallWidth.constant = 120
             }
             return cell
         default:
@@ -106,6 +129,10 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         switch item.cellType {
         case .categories:
             return CGSize(width: 100, height: 28)
+        case .shops:
+            return CGSize(width: 330, height: 150)
+        case .serviceShops:
+            return CGSize(width: 330, height: 150)
         default:
              return CGSize(width: 236, height: 198)
         }
@@ -120,7 +147,7 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         let item = exploreItems[tag]
         
         switch item.cellType {
-        case .categories: return 10
+        case .categories, .shops, .serviceShops: return item.categories.count
         default: return 0
         }
     }
@@ -134,6 +161,15 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         case .categories:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExploreCategoryCell", for: indexPath) as! ExploreCategoryCell
             cell.makeSelected(isSelected: indexPath.row == 0)
+            cell.vuLbl.text = item.categories[indexPath.row]
+            return cell
+        case .shops:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExploreShopCell", for: indexPath) as! ExploreShopCell
+            cell.img.image = UIImage(named: "store")
+            return cell
+        case .serviceShops:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExploreShopCell", for: indexPath) as! ExploreShopCell
+            cell.img.image = UIImage(named: "store")
             return cell
         default:
             return UICollectionViewCell()

@@ -152,7 +152,7 @@ Mark Turner?</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="61" id="kM7-e4-7ce"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                                     <color key="textColor" red="0.26799675820000002" green="0.33515372869999999" blue="0.44728344679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -168,7 +168,7 @@ Mark Turner?</string>
                                                     </state>
                                                 </button>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zfw-mD-KhX">
-                                                    <rect key="frame" x="0.0" y="72" width="414" height="213"/>
+                                                    <rect key="frame" x="0.0" y="72" width="414" height="198"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SBf-Fa-Ygr">
                                                         <size key="itemSize" width="50" height="50"/>
@@ -189,7 +189,7 @@ Mark Turner?</string>
                                                 </collectionView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="Zfw-mD-KhX" secondAttribute="bottom" id="15D-1c-qYb"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zfw-mD-KhX" secondAttribute="bottom" constant="15" id="15D-1c-qYb"/>
                                                 <constraint firstItem="Zfw-mD-KhX" firstAttribute="top" secondItem="OUZ-e8-OvA" secondAttribute="bottom" id="1vH-2H-dCi"/>
                                                 <constraint firstItem="XL2-PH-fvC" firstAttribute="leading" secondItem="OUZ-e8-OvA" secondAttribute="trailing" constant="8" id="Ga3-44-NwE"/>
                                                 <constraint firstAttribute="trailing" secondItem="Zfw-mD-KhX" secondAttribute="trailing" id="O0h-Vl-J35"/>
