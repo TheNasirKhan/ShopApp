@@ -27,6 +27,8 @@
 		889AA350265438E600CD0A10 /* ExploreCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AA34E265438E600CD0A10 /* ExploreCategoryCell.swift */; };
 		889AA351265438E600CD0A10 /* ExploreCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889AA34F265438E600CD0A10 /* ExploreCategoryCell.xib */; };
 		889BF2DD264BF04C0082CBB8 /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BF2DC264BF04C0082CBB8 /* ExploreModel.swift */; };
+		C96333612660B64D002E5585 /* ExploreServiceShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963335F2660B64D002E5585 /* ExploreServiceShopCell.swift */; };
+		C96333622660B64D002E5585 /* ExploreServiceShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96333602660B64D002E5585 /* ExploreServiceShopCell.xib */; };
 		C964398D265FACE000DDDEBF /* ExploreShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C964398B265FACE000DDDEBF /* ExploreShopCell.swift */; };
 		C964398E265FACE000DDDEBF /* ExploreShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C964398C265FACE000DDDEBF /* ExploreShopCell.xib */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		889AA34F265438E600CD0A10 /* ExploreCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreCategoryCell.xib; sourceTree = "<group>"; };
 		889BF2DC264BF04C0082CBB8 /* ExploreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreModel.swift; sourceTree = "<group>"; };
 		980A926BB5327CF90FB1902E /* Pods-ThingsMatcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingsMatcher.release.xcconfig"; path = "Target Support Files/Pods-ThingsMatcher/Pods-ThingsMatcher.release.xcconfig"; sourceTree = "<group>"; };
+		C963335F2660B64D002E5585 /* ExploreServiceShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreServiceShopCell.swift; sourceTree = "<group>"; };
+		C96333602660B64D002E5585 /* ExploreServiceShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreServiceShopCell.xib; sourceTree = "<group>"; };
 		C964398B265FACE000DDDEBF /* ExploreShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreShopCell.swift; sourceTree = "<group>"; };
 		C964398C265FACE000DDDEBF /* ExploreShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreShopCell.xib; sourceTree = "<group>"; };
 		ECD409672D158A87A1108D0F /* Pods-ThingsMatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingsMatcher.debug.xcconfig"; path = "Target Support Files/Pods-ThingsMatcher/Pods-ThingsMatcher.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		889AA3442654365200CD0A10 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C963335D2660B607002E5585 /* ServiceShop */,
 				C9643990265FB0E400DDDEBF /* ExploreCategoryCell */,
 				C964398A265FACB900DDDEBF /* ExploreStoreCell */,
 				889AA3452654367800CD0A10 /* ExploreHelpCell.swift */,
@@ -204,6 +209,15 @@
 				980A926BB5327CF90FB1902E /* Pods-ThingsMatcher.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C963335D2660B607002E5585 /* ServiceShop */ = {
+			isa = PBXGroup;
+			children = (
+				C963335F2660B64D002E5585 /* ExploreServiceShopCell.swift */,
+				C96333602660B64D002E5585 /* ExploreServiceShopCell.xib */,
+			);
+			path = ServiceShop;
 			sourceTree = "<group>";
 		};
 		C964398A265FACB900DDDEBF /* ExploreStoreCell */ = {
@@ -285,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				889AA351265438E600CD0A10 /* ExploreCategoryCell.xib in Resources */,
+				C96333622660B64D002E5585 /* ExploreServiceShopCell.xib in Resources */,
 				880E149C260F183E0027DAC5 /* LaunchScreen.storyboard in Resources */,
 				88303A1F264AA3B8008E2227 /* Home.storyboard in Resources */,
 				880E14E2260F3ECD0027DAC5 /* GoogleService-Info.plist in Resources */,
@@ -364,6 +379,7 @@
 				88303A18264AA2E2008E2227 /* AppStoryboard.swift in Sources */,
 				880E14E5260F40380027DAC5 /* FirebaseFetcher.swift in Sources */,
 				88303A25264AA407008E2227 /* TabbarVC.swift in Sources */,
+				C96333612660B64D002E5585 /* ExploreServiceShopCell.swift in Sources */,
 				880E1494260F183A0027DAC5 /* ViewController.swift in Sources */,
 				88303A22264AA3D5008E2227 /* ExploreVC.swift in Sources */,
 				889AA350265438E600CD0A10 /* ExploreCategoryCell.swift in Sources */,

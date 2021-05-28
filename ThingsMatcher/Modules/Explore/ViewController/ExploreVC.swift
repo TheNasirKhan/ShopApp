@@ -50,7 +50,7 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         case .shops:
             return 250
         case .serviceShops:
-            return 250
+            return 280 + 100
         default:
             return 400
         }
@@ -132,7 +132,7 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         case .shops:
             return CGSize(width: 330, height: 150)
         case .serviceShops:
-            return CGSize(width: 330, height: 150)
+            return CGSize(width: 280, height: 280)
         default:
              return CGSize(width: 236, height: 198)
         }
@@ -168,8 +168,9 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             cell.img.image = UIImage(named: "store")
             return cell
         case .serviceShops:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExploreShopCell", for: indexPath) as! ExploreShopCell
-            cell.img.image = UIImage(named: "store")
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExploreServiceShopCell", for: indexPath) as! ExploreServiceShopCell
+            cell.imgbg.image = UIImage(named: "store")
+            cell.imgIcon.image = UIImage(named: "store")
             return cell
         default:
             return UICollectionViewCell()

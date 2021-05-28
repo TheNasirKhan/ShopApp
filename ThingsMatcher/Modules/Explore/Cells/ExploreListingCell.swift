@@ -22,7 +22,7 @@ class ExploreListingCell: UITableViewCell {
         
         self.contentView.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight]
         
-        for item in ["ExploreAuctionItemCell", "ExploreItemCell", "ExplorePeopleCell", "TopTabCell", "DBCell", "ExploreShopCell"] {
+        for item in ["ExploreAuctionItemCell", "ExploreItemCell", "ExplorePeopleCell", "TopTabCell", "DBCell", "ExploreShopCell", "ExploreServiceShopCell"] {
             let nib = UINib(nibName: item, bundle: nil)
             collection.register(nib, forCellWithReuseIdentifier: item)
         }
