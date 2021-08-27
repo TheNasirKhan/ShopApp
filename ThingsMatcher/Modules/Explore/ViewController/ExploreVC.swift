@@ -46,7 +46,7 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         case .header:
             return UITableView.automaticDimension
         case .categories:
-            return 30
+            return 100
         case .shops:
             return 250
         case .serviceShops:
@@ -128,7 +128,7 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         
         switch item.cellType {
         case .categories:
-            return CGSize(width: 100, height: 28)
+            return CGSize(width: 100, height: 100)
         case .shops:
             return CGSize(width: 330, height: 150)
         case .serviceShops:

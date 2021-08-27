@@ -11,6 +11,7 @@ class ExploreCategoryCell: UICollectionViewCell {
 
     @IBOutlet weak var vubg: UIView!
     @IBOutlet weak var vuLbl: UILabel!
+    @IBOutlet weak var img: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
